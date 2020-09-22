@@ -10,4 +10,6 @@ echo --- run ---
 cat /usr/local/s2i/run
 echo ---
 
+JAVA_APP_JAR=scala-openshift-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+
 exec /usr/local/s2i/run
