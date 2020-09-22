@@ -1,4 +1,4 @@
-import akka.actor.ActorSystem
+//import akka.actor.ActorSystem
 
 
 object Test extends App {
@@ -6,8 +6,8 @@ object Test extends App {
 	println("= Test =")
 	println("========")
 
-	implicit val system: ActorSystem = ActorSystem("Test")
+	//implicit val system: ActorSystem = ActorSystem("Test")
 
 	// To prevent Openshift from restarting the pod indefinitely
-	//while (true) Thread.sleep(10000)
+	while (true) Thread.sleep(10000)
 }

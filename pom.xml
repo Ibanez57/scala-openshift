@@ -35,11 +35,11 @@
       <version>${scala.version}</version>
     </dependency>
 
-    <dependency>
+    <!--dependency>
       <groupId>com.typesafe.akka</groupId>
       <artifactId>akka-cluster</artifactId>
       <version>${akka-cluster.version}</version>
-    </dependency>
+    </dependency-->
 
     <!--dependency>
       <groupId>com.twitter</groupId>
