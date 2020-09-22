@@ -4,12 +4,13 @@ echo --------------
 echo - Custom run -
 echo --------------
 
-ls -lrt /usr/local/s2i
+#ls -lrt /usr/local/s2i
 
-echo --- run ---
-cat /usr/local/s2i/run
-echo ---
+#echo --- run ---
+#cat /usr/local/s2i/run
+#echo ---
 
+# JAR to run
 export JAVA_APP_JAR=scala-openshift-0.0.1-SNAPSHOT-jar-with-dependencies.jar
 
 exec /usr/local/s2i/run
