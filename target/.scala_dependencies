@@ -1,0 +1,6 @@
+/home/student/.m2/repository/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.jar:/home/student/scala-openshift/target/classes
+-------
+-------
+../src/main/scala/Test.scala -> classes/Test.class
+../src/main/scala/Test.scala -> classes/Test$.class
+../src/main/scala/Test.scala -> classes/Test$delayedInit$body.class
