@@ -15,13 +15,13 @@
     <scala.version>2.10.3</scala.version>
   </properties>
 
-  <repositories>
+  <!--repositories>
     <repository>
       <id>twttr</id>
       <name>twttr</name>
       <url>http://maven.twttr.com</url>
     </repository>
-  </repositories>
+  </repositories-->
 
   <!-- DEPENDENCIES -->
 
@@ -33,11 +33,11 @@
       <version>${scala.version}</version>
     </dependency>
 
-    <dependency>
+    <!--dependency>
       <groupId>com.twitter</groupId>
       <artifactId>finatra_2.10</artifactId>
       <version>1.5.3</version>
-    </dependency>
+    </dependency-->
 
   </dependencies>
 
@@ -46,7 +46,7 @@
   <!-- BUILD SETTINGS -->
   <build>
     <sourceDirectory>src/main/scala</sourceDirectory>
-    <testSourceDirectory>src/test/scala</testSourceDirectory>
+    <!--testSourceDirectory>src/test/scala</testSourceDirectory-->
 
     <!-- BUILD PLUGINS -->
     <plugins>
@@ -75,7 +75,8 @@
           <launchers>
             <launcher>
               <id>main</id>
-              <mainClass>com.openshift.scala.App</mainClass>
+              <!--mainClass>com.openshift.scala.App</mainClass-->
+              <mainClass>Test</mainClass>
             </launcher>
             <!-- you could define other launcher -->
           </launchers>
@@ -84,7 +85,7 @@
           <execution>
             <goals>
               <goal>compile</goal>
-              <goal>testCompile</goal>
+              <!--goal>testCompile</goal-->
             </goals>
             <configuration>
               <args>
@@ -107,7 +108,8 @@
           </descriptorRefs>
           <archive>
             <manifest>
-              <mainClass>com.openshift.scala.App</mainClass>
+              <!--mainClass>com.openshift.scala.App</mainClass-->
+              <mainClass>Test</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -121,7 +123,7 @@
         </executions>
       </plugin>
 
-      <plugin>
+      <!--plugin>
         <groupId>org.scalatest</groupId>
         <artifactId>scalatest-maven-plugin</artifactId>
         <version>1.0-M2</version>
@@ -133,7 +135,7 @@
             </goals>
           </execution>
         </executions>
-      </plugin>
+      </plugin-->
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
