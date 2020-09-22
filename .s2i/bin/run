@@ -6,4 +6,8 @@ echo --------------
 
 ls -lrt /usr/local/s2i
 
+echo --- run ---
+cat /usr/local/s2i/run
+echo ---
+
 exec /usr/local/s2i/run
