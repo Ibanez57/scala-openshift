@@ -4,4 +4,6 @@ echo --------------
 echo - Custom run -
 echo --------------
 
-echo exec /usr/libexec/s2i/run
+ls -lrt /usr/local/s2i
+
+exec /usr/local/s2i/run

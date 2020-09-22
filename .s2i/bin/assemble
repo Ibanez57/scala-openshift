@@ -4,7 +4,9 @@ echo -------------------
 echo - Custom assemble -
 echo -------------------
 
-/usr/libexec/s2i/assemble
+ls -lrt /usr/local/s2i
+
+/usr/local/s2i/assemble
 rc=$?
 
 if [ $rc -eq 0 ]; then
