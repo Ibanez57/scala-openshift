@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo -------------------
+echo - Custom assemble -
+echo -------------------
+
+/usr/libexec/s2i/assemble
+rc=$?
+
+if [ $rc -eq 0 ]; then
+	echo "Making post-invocation changes..."
+else
+	echo "Error: assemble failed!"
+fi
+
+exit $rc
